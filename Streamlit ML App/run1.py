@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle
 import base64
+import openai
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 np.bool = np.bool_
 np.object = object  
